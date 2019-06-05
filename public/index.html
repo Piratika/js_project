@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>project</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/ios-glyphs/30/000000/ladybird.png"/>
     <!-- <link rel='stylesheet' href='main.css'> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -13,11 +14,11 @@
 <body>
     <div id="wrapper">
         <header>
-            <a href="/">
+            <a href="./">
                 <img id="logo_img" src="images/logo.png" alt="rabble_logo">
             </a>
-            <form name="search" action="#" method="get">
-                <input type="text" name="search" placeholder="search"><button type="submit">GO</button>
+            <form name="search">
+                <input type="search" name="search" placeholder="search...">
             </form>
 
             <nav>
@@ -70,7 +71,7 @@
             <div class="content">
             </div>
         </section>
-        <footer>blah blah</footer>
+        <footer>blah blah footer</footer>
     </div>
 
     <div id="add_content">
@@ -93,6 +94,29 @@
             <textarea id="new_content_description"></textarea>
             <label for="new_content_link">Download link</label>
             <input id="new_content_link" type="url" required>
+            <input type="submit">
+        </form>
+    </div>
+    <div id="edit_content">
+        <form id="edit_content_form">
+            <label for="update_content_type">Type of the content</label>
+            <select id="update_content_type">
+                <option value="game">game</option>
+                <option value="book">book</option>
+                <option value="music">music</option>
+                <option value="video">video</option>
+                <option value="project">project</option>
+            </select>
+            <label for="update_content_title">Title</label>
+            <input id="update_content_title" type="text" required>
+            <label for="update_content_image">Image</label>
+            <input id="update_content_image" type="url">
+            <label for="update_content_creator">Creator or artist</label>
+            <input id="update_content_creator" type="text">
+            <label for="update_content_description">Description</label>
+            <textarea id="update_content_description"></textarea>
+            <label for="update_content_link">Download link</label>
+            <input id="update_content_link" type="url" required>
             <input type="submit">
         </form>
     </div>

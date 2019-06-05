@@ -105,7 +105,7 @@ input[name="sort_direction"] {
 	}
   }
 
-input[type="text"], input[type="url"], select, textarea {
+input[type="text"], input[type="url"], input[name="search"], select, textarea {
 	background-color: #f3f3f3;
 	border: 1px solid #e7e7e7;
 	height: 30px;
@@ -119,9 +119,13 @@ input[type="text"], input[type="url"], select, textarea {
 	
 form[name="search"] {
 	float: right;
+	margin-right: 20px;
+	input[name="search"]{
+		border-radius: 15px;
+	}
 }
 
-form[name="search"] button, #add_content input[type="submit"] {
+#add_content input[type="submit"], #edit_content input[type="submit"] {
 	color: #fff;
 	background-color: #dbac2b;
 	border: none;
